@@ -10,7 +10,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 # clean up the apk cache (no-cache still caches the indexes)
 # update the ca-certificates
 RUN	apk --update --no-cache \
-	add --virtual .base_packages bash ca-certificates supervisor && \
+	add bash ca-certificates supervisor && \
 	rm -rf /var/cache/apk/* && \
 	update-ca-certificates
 
