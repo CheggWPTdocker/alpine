@@ -1,4 +1,4 @@
-NAME = dockerwpt/alpine
+NAME = cheggwpt/alpine
 VERSION = 3.4
 
 .PHONY: all build test tag_latest release ssh
