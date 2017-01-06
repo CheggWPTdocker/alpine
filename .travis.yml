@@ -16,5 +16,5 @@ env:
   - TEST_DIR=3.5
   - TEST_DIR=edge
 
-script: cd $TEST_DIR && dockerlint Dockerfile && docker build -t T_$TEST_DIR .
+script: cd $TEST_DIR && dockerlint Dockerfile && docker build -t $TEST_DIR .
 
