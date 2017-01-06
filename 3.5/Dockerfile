@@ -1,9 +1,9 @@
-FROM alpine:edge
-# FROM alpine:3.4
+# FROM alpine:edge
+FROM alpine:3.5
 MAINTAINER jgilley@chegg.com
 
 # if edge libraries are needed use the following:
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+# RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 
 # install base packages - BASH should only be used for debugging, it's almost a meg in size
 # install ca-certificates

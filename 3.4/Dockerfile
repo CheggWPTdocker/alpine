@@ -18,8 +18,8 @@ RUN	apk --update --no-cache \
 COPY container_confs /
 
 # set our environment
-ENV environment='DEVELOPMENT'
-# ENV environment='PRODUCTION'
+ENV APP_ENV='DEVELOPMENT'
+# ENV APP_ENV='PRODUCTION'
 
 # create the supervisor run dir
 # make sure that entrypoint and other scripts are executeable 
